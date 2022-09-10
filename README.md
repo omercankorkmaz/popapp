@@ -1,8 +1,17 @@
 # Example Popup App
 
+Developed with React & Typecript, used ContextApi.
+
 ## Requirements
 
 x
+
+## Assumptions
+
+Since it was not mentioned, design had no concern about being responsive.
+Data can be stored in localStorage in two ways; 
+- when any changes on form values happened (commented in Form.tsx:32),
+- when user submits form (active in Form.tsx:76).
 
 ## Available Scripts
 
