@@ -12,6 +12,7 @@ x
 - Data can be stored in localStorage in two ways; 
 - - when any changes on form values happened (commented in Form.tsx:32),
 - - when user submits form (active in Form.tsx:76).
+- Only 'Inter' font family created, so on the font dropdown it's not possible display texts with own font family (Form.tsx:126)
 
 ## Available Scripts
 
