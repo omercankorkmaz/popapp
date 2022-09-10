@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { SettingsContext } from '../context/SettingsContext';
 import Form from './Form';
 import Success from './Success';
-
+import times from "../assets/icons/times.png";
 
 const Popup = () => {
 
@@ -20,12 +20,12 @@ const Popup = () => {
                             LOADING...
                         </div> :
                         <>
-                            <button className="close-button">
-                                <i className="fa fa-times"></i>
-                            </button>
-        
                             {!submitted ? 
                             <>
+                                <button className="close-button">
+                                    {/* <i className="fa fa-times"></i> */}
+                                    <img src={times} /> 
+                                </button>
                                 <h1 className="headline">{settingsState.headline}</h1>
                                 <div className="description">{settingsState.description}</div>
                                 <Form 

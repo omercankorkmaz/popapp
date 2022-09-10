@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './assets/styles/styles.css';
 import Popup from './components/Popup';
 import Settings from './components/Settings';
 

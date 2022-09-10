@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import info from "../assets/icons/info.png";
 
 type Font = {
     family: string,
@@ -89,29 +90,29 @@ const Form = (props: PropType) => {
         <form onSubmit={onFormSubmit} className="main-side-popup-content-form">
             <div className='form-element'>
                 <input 
-                    className="form-input" placeholder="Your name" 
+                    className="form-input" placeholder="Your name" name="name"
                     onChange={(e) => setFormValues({ ...formValues, name: e.target.value })}
                 ></input>
                 {errors["name"] && 
                 <small className="required-message">
-                    <i className='fa fa-info-circle'></i>
+                    <img src={info} />
                     {errors["name"]}
                 </small>}
             </div>
             <div className='form-element'>
                 <input 
-                    className="form-input" placeholder="Email" 
+                    className="form-input" placeholder="Email" name="email"
                     onChange={(e) => setFormValues({ ...formValues, email: e.target.value })}
                 ></input>
                 {errors["email"] && 
                 <small className="required-message">
-                    <i className='fa fa-info-circle'></i>
+                    <img src={info} />
                     {errors["email"]}
                 </small>}
             </div>
             <div className='form-element'>
                 <select
-                    className="font-dropdown"
+                    className="font-dropdown" name="font"
                     disabled={error ? true : false}
                     onChange={(e) => setFormValues({ ...formValues, font: e.target.value })}
                     defaultValue={error ? "error" : "placeholder"}
@@ -122,13 +123,14 @@ const Form = (props: PropType) => {
                     }
                     {!error && 
                     fonts && fonts.length && fonts.map(font => (
+                        // if we create all font families in font.css with .ttf or woff files will display corresponding text with it's font family
                         <option value={font.family} key={font.family} style={{ 'fontFamily': `${font.family}, ${font.category}` }}>{font.family}</option>
                     ))
                     }
                 </select>
                 {errors["font"] && 
                 <small className="required-message">
-                    <i className='fa fa-info-circle'></i>
+                    <img src={info} />
                     {errors["font"]}
                 </small>}
             </div>
