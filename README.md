@@ -5,11 +5,12 @@
 
 ## Assumptions
 
-- Since it was not mentioned, only used pure CSS for styling and app designed without any concern about being responsive.
+- Since it was not mentioned, only used pure CSS for styling
+- Since it was not mentioned, app designed without any concern about being responsive.
 - Data (form values) can be stored in localStorage in two ways; 
 - - when any changes on form values happened (commented in Form.tsx:32),
 - - when user submits form (active in Form.tsx:76).
-- Only 'Inter' font family created, so on the font dropdown it's not possible display texts with it's own font family (Form.tsx:126)
+- Only 'Inter' font family created on app, so on the font dropdown it's not possible display texts with it's own font family (Form.tsx:126)
 
 ## Available Scripts
 
