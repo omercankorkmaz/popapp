@@ -5,8 +5,7 @@
 
 ## Assumptions
 
-- Since it was not mentioned, only used pure CSS for styling.
-- Since it was not mentioned, designed without any concern about being responsive.
+- Since it was not mentioned, only used pure CSS for styling and app designed without any concern about being responsive.
 - Data (form values) can be stored in localStorage in two ways; 
 - - when any changes on form values happened (commented in Form.tsx:32),
 - - when user submits form (active in Form.tsx:76).
