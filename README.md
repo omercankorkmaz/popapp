@@ -3,10 +3,6 @@
 - Developed with latest version of React (18.2.0), Typecript and CSS.
 - Used Functional Components and ContextAPI (for general settings).
 
-## Application Requirements
-
-x
-
 ## Assumptions
 
 - Since it was not mentioned, only used pure CSS for styling.
