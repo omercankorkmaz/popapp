@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { SettingsContext } from '../context/SettingsContext';
 import Form from './Form';
 import Success from './Success';
@@ -23,7 +23,6 @@ const Popup = () => {
                             {!submitted ? 
                             <>
                                 <button className="close-button">
-                                    {/* <i className="fa fa-times"></i> */}
                                     <img src={times} /> 
                                 </button>
                                 <h1 className="headline">{settingsState.headline}</h1>

@@ -21,7 +21,7 @@ type PropType = {
 
 export const SettingsProvider = (props: PropType) => {
 
-    const initialSettings = {
+    const initialSettings: SettingsType = {
         headline: 'NEW STUFF', 
         description: 'Sign up for our newsletter and get 15% off your first order!', 
         successMessage: 'Success',

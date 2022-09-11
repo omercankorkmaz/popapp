@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { SyntheticEvent, useEffect, useState } from 'react';
 import info from "../assets/icons/info.png";
 
 type Font = {
@@ -81,7 +81,7 @@ const Form = (props: PropType) => {
 
     }
 
-    const onFormSubmit = (e: any) => {
+    const onFormSubmit = (e: SyntheticEvent) => {
         e.preventDefault();
         validateForm();
     }

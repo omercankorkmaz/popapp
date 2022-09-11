@@ -8,7 +8,6 @@ const Success = () => {
 
   return (
     <>
-        {/* <i className="fa fa-check success-icon"></i> */}
         <img src={check} /> 
         <h1 className="success-message">{settingsState.successMessage}</h1>
     </>
