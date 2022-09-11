@@ -1,7 +1,7 @@
 # Example Popup App
 
-Developed with latest version of React (18.2.0), Typecript and CSS.
-Used Functional Components and ContextAPI.
+- Developed with latest version of React (18.2.0), Typecript and CSS.
+- Used Functional Components and ContextAPI (for general settings).
 
 ## Application Requirements
 
